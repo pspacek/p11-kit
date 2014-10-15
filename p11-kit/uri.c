@@ -902,7 +902,8 @@ parse_class_attribute (const char *name, const char *start, const char *end,
 	assert (start <= end);
 
 	if (strcmp ("objecttype", name) != 0 &&
-	    strcmp ("object-type", name) != 0)
+	    strcmp ("object-type", name) != 0 &&
+	    strcmp ("type", name) != 0)
 		return 0;
 
 	value = key_decode (start, end);
